@@ -19,7 +19,6 @@ resource "azurerm_linux_virtual_machine" "vm" {
 #  }
   os_disk {
     caching              = var.caching
-    storage_account_type = var.storage_account_type
   }
   depends_on = [
     azurerm_network_interface.nic
