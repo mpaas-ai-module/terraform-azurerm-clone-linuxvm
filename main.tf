@@ -8,7 +8,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
  # admin_username                  = var.admin_username
  # admin_password                  = random_password.password.result
  # disable_password_authentication = var.disable_password_authentication
- # secure_boot_enabled = true
+   secure_boot_enabled = true
   os_managed_disk_id    = azurerm_managed_disk.os_disk.id
   identity {type = var.identity}
 #  os_disk {
